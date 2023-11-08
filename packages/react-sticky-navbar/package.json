@@ -1,6 +1,6 @@
 {
   "name": "react-sticky-navbar",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Enhance your website with our customizable React navbar. Enjoy the convenience of a sticky feature for seamless navigation.",
   "main": "./lib/StickyNavbar.js",
   "scripts": {
