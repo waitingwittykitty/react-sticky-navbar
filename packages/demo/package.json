@@ -1,0 +1,42 @@
+{
+  "name": "react-sticky-navbar-demo",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://react-sticky-navbar-demo.vercel.app",
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.10.2",
+    "@types/jest": "^28.1.8",
+    "@types/node": "18.7.13",
+    "@types/react": "18.2.25",
+    "@types/react-dom": "18.0.6",
+    "react": "^18.2.0",
+    "react-color": "2.19.3",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "react-sticky-navbar": "*",
+    "typescript": "^4.7.4",
+    "zustand": "^4.1.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/react-color": "^3.0.6"
+  }
+}
