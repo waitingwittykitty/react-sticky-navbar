@@ -2,6 +2,7 @@ node_modules
 .vscode
 assets
 demo
+src
 .babelrc
 .eslintrc.js
 .prettierrc.js

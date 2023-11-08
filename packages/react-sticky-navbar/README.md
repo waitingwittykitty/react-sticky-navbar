@@ -7,16 +7,16 @@ StickyNavbar is a React component that provides a customizable sticky navigation
 To install StickyNavbar, use npm or yarn:
 
 ```bash
-npm install @fastestcoding/react-sticky-navbar
+npm install react-sticky-navbar
 # or
-yarn add @fastestcoding/react-sticky-navbar
+yarn add react-sticky-navbar
 ```
 
 ## Usage
 
 ```jsx
 import React from "react";
-import StickyNavbar from "sticky-navbar-react";
+import StickyNavbar from "react-sticky-navbar";
 
 const App = () => {
   return (
