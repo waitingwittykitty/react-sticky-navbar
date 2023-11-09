@@ -1,4 +1,4 @@
-![Sticky Navbar Demo](../demo/assets/react-sticky-navbar-demo-clip.gif)
+![Sticky Navbar Demo](./packages/demo/assets/react-sticky-navbar-demo-clip.gif)
 
 # React Sticky Navbar
 
