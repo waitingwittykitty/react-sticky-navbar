@@ -1,6 +1,10 @@
+![Sticky Navbar Demo](../demo/assets/react-sticky-navbar-demo-clip.gif)
+
 # React Sticky Navbar
 
 StickyNavbar is a React component that provides a customizable sticky navigation bar for websites. It allows for smooth scrolling and dynamic behavior based on the user's scroll position.
+
+[Demo](https://react-sticky-navbar-demo.vercel.app/)
 
 ## Installation
 
@@ -21,10 +25,10 @@ import StickyNavbar from "react-sticky-navbar";
 const App = () => {
   return (
     <div>
-      {/* Your other components */}
       <StickyNavbar>
         {/* Navigation links or other content */}
       </StickyNavbar>
+      {/* Your other components */}
     </div>
   );
 };
