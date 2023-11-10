@@ -20,7 +20,7 @@ yarn add react-sticky-navbar
 
 ```jsx
 import React from "react";
-import StickyNavbar from "sticky-navbar-react";
+import StickyNavbar from "react-sticky-navbar";
 
 const App = () => {
   return (
