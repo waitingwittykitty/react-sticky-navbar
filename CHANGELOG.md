@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/waitingwittykitty/react-sticky-navbar/compare/v1.0.0...v1.1.0) (2023-11-17)
+
+
+### Features
+
+* add scroll bottom status to module and update demo settings for it ([ff798f7](https://github.com/waitingwittykitty/react-sticky-navbar/commit/ff798f78329d902888d23a45798e08356976a54a))
+
 ## [1.0.0](https://github.com/waitingwittykitty/react-sticky-navbar/compare/v0.1.7...v1.0.0) (2023-11-17)
 
 
