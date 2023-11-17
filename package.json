@@ -4,6 +4,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build_module": "yarn workspace react-sticky-navbar build",
+    "release_module": "yarn workspace react-sticky-navbar release"
+  },
   "devDependencies": {
     "lerna": "^5.4.3"
   }
