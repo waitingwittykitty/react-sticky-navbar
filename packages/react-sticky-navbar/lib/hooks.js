@@ -21,16 +21,14 @@ function useStickyNavbarStatus() {
     isScrollUp = _useState4[0],
     setScrollUp = _useState4[1];
   (0, _react.useLayoutEffect)(function () {
-    var handleMouseWheel = function handleMouseWheel(event) {
-      setScrollUp(event.deltaY < 0);
-    };
+    var prevScrollY = window.scrollY;
     var handleScroll = function handleScroll() {
       setScrollTop(window.scrollY <= 0);
+      setScrollUp(window.scrollY < prevScrollY);
+      prevScrollY = window.scrollY;
     };
-    document.addEventListener("wheel", handleMouseWheel);
     document.addEventListener("scroll", handleScroll);
     return function () {
-      document.removeEventListener("wheel", handleMouseWheel);
       document.removeEventListener("scroll", handleScroll);
     };
   }, []);

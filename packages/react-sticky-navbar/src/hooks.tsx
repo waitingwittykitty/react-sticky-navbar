@@ -5,19 +5,17 @@ export function useStickyNavbarStatus() {
   const [isScrollUp, setScrollUp] = useState(true);
 
   useLayoutEffect(() => {
-    const handleMouseWheel = (event: WheelEvent) => {
-      setScrollUp(event.deltaY < 0);
-    };
+    let prevScrollY = window.scrollY;
 
     const handleScroll = () => {
       setScrollTop(window.scrollY <= 0);
+      setScrollUp(window.scrollY < prevScrollY);
+      prevScrollY = window.scrollY;
     };
 
-    document.addEventListener("wheel", handleMouseWheel);
     document.addEventListener("scroll", handleScroll);
 
     return () => {
-      document.removeEventListener("wheel", handleMouseWheel);
       document.removeEventListener("scroll", handleScroll);
     };
   }, []);
