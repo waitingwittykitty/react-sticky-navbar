@@ -6,7 +6,9 @@
   ],
   "scripts": {
     "build_module": "yarn workspace react-sticky-navbar build",
-    "release_module": "yarn workspace react-sticky-navbar release"
+    "release_module": "yarn workspace react-sticky-navbar release",
+    "publish_module": "yarn workspace react-sticky-navbar publish",
+    "deploy": "yarn release_module && git push --follow-tags && yarn publish_module"
   },
   "devDependencies": {
     "lerna": "^5.4.3"
