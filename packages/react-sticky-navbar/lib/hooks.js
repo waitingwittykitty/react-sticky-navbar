@@ -20,11 +20,23 @@ function useStickyNavbarStatus() {
     _useState4 = _slicedToArray(_useState3, 2),
     isScrollUp = _useState4[0],
     setScrollUp = _useState4[1];
+  var _useState5 = (0, _react.useState)(false),
+    _useState6 = _slicedToArray(_useState5, 2),
+    isScrollBottom = _useState6[0],
+    setScrollBottom = _useState6[1];
   (0, _react.useLayoutEffect)(function () {
     var prevScrollY = window.scrollY;
-    var handleScroll = function handleScroll() {
+    var handleScroll = function handleScroll(event) {
+      var target = event.target;
+      var scrollableHeight = 0;
+      if (target instanceof Document) {
+        scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+      } else {
+        scrollableHeight = (target === null || target === void 0 ? void 0 : target.scrollHeight) - (target === null || target === void 0 ? void 0 : target.offsetHeight);
+      }
       setScrollTop(window.scrollY <= 0);
       setScrollUp(window.scrollY < prevScrollY);
+      setScrollBottom(window.scrollY >= scrollableHeight);
       prevScrollY = window.scrollY;
     };
     document.addEventListener("scroll", handleScroll);
@@ -34,7 +46,8 @@ function useStickyNavbarStatus() {
   }, []);
   return {
     isScrollTop: isScrollTop,
-    isScrollUp: isScrollUp
+    isScrollUp: isScrollUp,
+    isScrollBottom: isScrollBottom
   };
 }
 //# sourceMappingURL=hooks.js.map

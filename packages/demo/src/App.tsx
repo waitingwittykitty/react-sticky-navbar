@@ -13,7 +13,7 @@ const githubURL = process.env.REACT_APP_GITHUB_URL as string
 const packageName = process.env.REACT_APP_PACKAGE_NAME as string
 
 const App = () => {
-  const { showOnScrollDown, showOnScrollUp, showOnTop, stickyBackground, duration } =
+  const { showOnScrollDown, showOnScrollUp, showOnTop, showOnBottom, stickyBackground, duration } =
     useSettingsStore()
 
   return (
@@ -22,6 +22,7 @@ const App = () => {
         showOnScrollDown={showOnScrollDown}
         showOnScrollUp={showOnScrollUp}
         showOnTop={showOnTop}
+        showOnBottom={showOnBottom}
         stickyBackground={stickyBackground}
         zIndex={200}
         duration={duration}

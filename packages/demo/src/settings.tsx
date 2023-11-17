@@ -7,7 +7,7 @@ export interface StickyNavbarSettings extends StickyNavbarProps {
 
 export const useSettingsStore = create<StickyNavbarSettings>((set, get) => ({
   showOnTop: true,
-  // showOnBottom: true,
+  showOnBottom: true,
   showOnScrollDown: false,
   showOnScrollUp: true,
   position: "top",

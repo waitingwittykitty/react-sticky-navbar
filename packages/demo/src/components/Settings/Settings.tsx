@@ -17,6 +17,8 @@ const ValueChip = (props: ChipProps) => {
 }
 
 const colors = [
+  'transparent',
+  'black',
   '#dee4fd',
   '#e91e63',
   '#9c27b0',
@@ -30,11 +32,9 @@ const colors = [
   '#8bc34a',
   '#cddc39',
   '#ffeb3b',
-  '#ffc107',
-  '#ff9800',
   '#ff5722',
   '#795548',
-  '#607d8b'
+  '#607d8b',
 ]
 
 const Settings = () => {
@@ -89,7 +89,7 @@ const Settings = () => {
               label="Show on Scroll Top"
             />
           </div>
-          {/* <div>
+          <div>
             <FormControlLabel
               control={
                 <Checkbox
@@ -99,7 +99,7 @@ const Settings = () => {
               }
               label="Show on Scroll Bottom"
             />
-          </div> */}
+          </div>
           <Box my={2}>
             <Typography gutterBottom>
               Sticky Background Color <ValueChip label={settings.stickyBackground} />
