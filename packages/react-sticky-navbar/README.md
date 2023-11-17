@@ -42,7 +42,13 @@ StickyNavbar takes various props to customize its behavior, including `showOnTop
 
 - `children`: React nodes to be rendered inside the sticky navbar.
 - `classNames`: Custom CSS class names for different scroll positions.
+  - `scrollTop`: Custom CSS class name for the navbar when the user is at the top of the page.
+  - `scrollMiddle`: Custom CSS class name for the navbar when the user is at the middle of the page.
+  - `scrollBottom`: Custom CSS class name for the navbar when the user is at the bottom of the page.
+  - `scrollUp`: Custom CSS class name for the navbar when the user scrolled up the page.
+  - `scrollDown`: Custom CSS class name for the navbar when the user scrolled down the page.
 - `showOnTop`: Whether to show the navbar when the user is at the top of the page.
+- `showOnBottom`: Whether to show the navbar when the user is at the bottom of the page.
 - `showOnScrollDown`: Whether to show the navbar when the user is scrolling down.
 - `showOnScrollUp`: Whether to show the navbar when the user is scrolling up.
 - `zIndex`: The z-index of the navbar.
