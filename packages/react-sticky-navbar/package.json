@@ -7,8 +7,9 @@
     "clean": "rimraf lib/",
     "copy-files": "copyfiles -u 1 src/**/*.css lib/",
     "generate-types": "tsc --emitDeclarationOnly --declarationDir ./lib",
-    "build": "yarn clean && yarn generate-types && yarn copy-files && babel ./src --out-dir lib --extensions \".ts,.tsx\" --source-maps",
-    "start": "npm run build -- --watch",
+    "build": "yarn generate-types && yarn copy-files && babel ./src --out-dir lib --extensions \".ts,.tsx\" --source-maps",
+    "rebuild": "yarn clean && yarn build",
+    "start": "yarn generate-types && yarn copy-files && babel ./src --out-dir lib --extensions \".ts,.tsx\" --source-maps --watch",
     "test": "jest",
     "release": "standard-version --infile ../../CHANGELOG.md"
   },
