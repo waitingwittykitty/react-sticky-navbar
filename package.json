@@ -5,6 +5,8 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "yarn workspace demo build",
+    "start": "yarn workspace demo start",
     "build_module": "yarn workspace react-sticky-navbar build",
     "release_module": "yarn workspace react-sticky-navbar release",
     "publish_module": "yarn workspace react-sticky-navbar publish",
